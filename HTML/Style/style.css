@@ -28,7 +28,7 @@ footer {
     background-color: var(--BackColor);
     padding: 10px;
     padding: 5vh;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     bottom: 0;
 }
@@ -175,6 +175,7 @@ picture {
 
 img {
     max-height: 80px;
+    max-width: 80%;
 }
 
 .slideshow {
@@ -215,7 +216,7 @@ audio {
     border-radius: 3px;
     color: black;
     text-decoration: none;
-    width: 10vw;
+    width: 15vw;
     text-align: center;
     margin: 2px;
     padding: 3px;
