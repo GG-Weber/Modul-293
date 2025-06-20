@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gregory Weber">
+    <meta name="description" content="A school learning website">
+    <link rel="stylesheet" href="../Style/style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerNav">
+            <h1>Contact me</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./About_us.html">About us</a></li>
+                    <li class="active"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       
+            <article class="article1-contact">
+                <p>You've got a problem? Contact us over this formular!</p>
+            </article>
+
+           
+                <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+                    <fieldset>
+
+                    <legend>Contack us</legend>
+
+                    <label for="vorname">Vorname</label>
+                    <input type="text" name="Vorname" id="vorname" placeholder="Max" size="32" autofocus required maxlength="32" minlength="3">
+
+                    <label for="nachname">Nachname</label>
+                    <input type="text" name="Nachname" id="nachname" placeholder="Mustermann" size="32" required maxlength="32" minlength="3">
+
+                    <label for="mail">E-Mail Adresse</label>
+                    <input type="email" inputmode="email" name="Mail" id="mail" size="32" placeholder="max-mustermann@example.com"
+                        required maxlength="50" minlength="5">
+
+                    <label for="text">Nachricht</label>
+                    <textarea name="Text" id="text" placeholder="I've got a problem with" size="64" maxlength="300" minlength="10"></textarea>
+
+                    <label for="problem">Problem Art</label>
+                    <select name="select_problem" id="problem">
+                        <option value="ALGEMEIN">Algemeines Problem</option>
+                        <option value="IT">IT Problem</option>
+                        <option value="RUECKGABE">Produkt Rückgabe</option>
+                    </select>
+
+                    <label for="abteilung">Abteilung (nur für Mitarbeiter)</label>
+                    <input type="text" id="abteilung" disabled size="32">
+
+                    <label for="token">Ihr sitzungs Token</label>
+                    <input value="WHX-3Z2-99P" type="text" id="token" readonly>
+
+                    <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Delete</button>
+                    </div>
+                </fieldset>
+                </form>
+
+                <article>
+                    <h2>Oder über:</h2>
+                    <a class="contacts" href="mailto:gregory.weber@bbzbl-it.ch" >Mail</a>
+                    <a class="contacts" href="tel:0767615579" >Telefon</a>
+                    <a class="contacts" href="https://www.nike.com/ch/help" target="_blank">Hilfe Seite</a>
+                </article>
+    </main>
+
+    <footer>
+        <p>Mail: gregory.weber@bbzbl-it.ch</p>
+        <p>Instagram: *******</p>
+        <p> &copy; 2025 <del><a target="_blank" href="https://www.example-link.com">Example</a></del></p>
+    </footer>
+</body>
+</html>

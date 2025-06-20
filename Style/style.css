@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --NavDistance: 33.333%;
+    --BackColor: #d3d3d3;
+}
+
+
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--NavDistance);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--BackColor);
+    padding: 10px;
+    padding: 5vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+article {
+    margin: 5vh;
+    padding: 3vh 3vw;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 8px gray;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+fieldset {
+    padding: 3vh 3vw;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 8px gray;
+    transition: transform 0.3s ease;
+    width: 80%;
+    transform: scale(1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerNav a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+
+.headerNav li {
+    border: 1px darkgray solid;
+    border-top: none;
+}
+
+
+.active a {
+    background-color: lightgray;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center !important;
+    align-items: center !important;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+
+article,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+article:hover {
+    transform: scale(1.01);
+}
+
+
+.headerNav {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.article1-contact {
+    text-align: center;
+}
+
+article h3 {
+    text-align: center;
+}
+
+form {
+
+ input, select {
+    width: 30%;
+    text-align: center;
+}
+
+ textarea {
+    width: 30%;
+    text-align: center;
+    resize: none;
+} 
+label,
+button {
+    margin-top: 20px;
+}
+}
+
+
+footer a {
+    text-decoration: none;
+    color: blue;
+}
+
+video{
+    width: 80%;
+}
+
+
+picture {
+    max-height: 100px;
+}
+
+img {
+    max-height: 80px;
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product {
+    margin: 10px 1%;
+    width: 31%;
+    text-align: center;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px lightgray;
+    transform: scale(1);
+    background-image: none;
+}
+
+.product:hover {
+    transform: scale(1.02);
+    background-image: linear-gradient(lightgray, darkgray);
+    animation-name: background-animation;
+    animation-duration: 1s;
+}
+
+@keyframes background-animation {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+audio {
+    max-width: 100%;
+}
+
+.contacts {
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    text-decoration: none;
+    width: 10vw;
+    text-align: center;
+    margin: 2px;
+    padding: 3px;
+    min-width: 50px;
+}
