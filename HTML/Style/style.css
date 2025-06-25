@@ -179,7 +179,7 @@ video {
 }
 
 /* ---------- Responsive Design ---------- */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .headerNav {
         grid-template-columns: 1fr 1fr;
     }
@@ -196,6 +196,10 @@ video {
 
     .contacts {
         width: 30vw;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 }
 
