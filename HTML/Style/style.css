@@ -199,7 +199,7 @@ video {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -225,5 +225,8 @@ video {
     article,
     form {
         width: 95vw;
+    }
+    h1 {
+        font-size: 20px;
     }
 }
